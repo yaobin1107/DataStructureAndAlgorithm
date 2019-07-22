@@ -30,7 +30,7 @@ public class _02_QuickSorting_middle {
             while (arr[r] > middle) {
                 r--;
             }
-            //如果l >= r说明middle 的左右两的值，已经按照左边全部是
+            //如果l >= r说明middle 的左右两边的值，已经按照左边全部是
             //小于等于middle值，右边全部是大于等于middle值
             if (l >= r) {
                 break;
@@ -62,5 +62,6 @@ public class _02_QuickSorting_middle {
         if (right > l) {
             quickSort(arr, l, right);
         }
+        System.out.println(Arrays.toString(arr));
     }
 }

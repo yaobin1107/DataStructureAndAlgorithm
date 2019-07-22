@@ -47,5 +47,6 @@ public class _01_QuickSorting_left {
         quickSort(arr, low, r - 1);
         //递归调用右半数组
         quickSort(arr, l + 1, high);
+        System.out.println(Arrays.toString(arr));
     }
 }
