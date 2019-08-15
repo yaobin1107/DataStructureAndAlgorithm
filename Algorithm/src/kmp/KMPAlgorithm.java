@@ -22,7 +22,7 @@ public class KMPAlgorithm {
         //创建一个数组保存部分匹配值
         int[] next = new int[target.length()];
         next[0] = 0;//字符串长度为 1，部分匹配值必为0
-        for (int i = 1, j = 0; i < target.length(); i++) {
+        for (int i = 1, j = 0; i < target.length(); i++) {//j为部分匹配值
             //target.charAt(i) != target.charAt(j)时，我们需要从next[j-1]获取新的j
             //直到发现target.charAt(i) == target.charAt(j)时退出
             while (j > 0 && target.charAt(j) != target.charAt(i)) {
